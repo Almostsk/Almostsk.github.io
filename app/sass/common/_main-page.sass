@@ -1,0 +1,202 @@
+
+
+
+
+.hvr-buzz-out
+	cursor: pointer		
+
+
+.content
+	background-color: #e3e3e3
+
+.nav-menu
+	width: 50px
+	height: 100%
+	min-height: 500px
+	position: absolute
+	z-index: 3
+	top: 0
+	left: 0
+	background-color: rgba(0,0,0,0.4)	
+	+display-flex
+	flex-direction: column
+	justify-content: space-between
+.nav-logo
+	padding-top: 20px
+	width: 100%
+	height: 70px
+	background-color: rgba(0,0,0,0.3)
+.logo
+	width: 90%	
+
+.nav-buttons
+	width: 100%
+	height: 250px
+	position: relative
+.nav-link
+	&:hover
+		+transition($default-transition)
+		.nav-button
+			color: $base-active-color
+			.fa
+				opacity: 0
+				+transition($default-transition)
+			.nav-hidden
+				opacity: 1	
+				+transition($default-transition)
+.nav-hidden
+	font-size: 14px
+	position: absolute	
+	display: inline-block
+	width: 100%
+	left: 0
+	opacity: 0
+
+.nav-button
+	width: 100%
+	height: 50px	
+	text-align: center
+	line-height: 50px
+	font-size: 30px
+	color: $base-color
+
+.nav-social
+	width: 100%
+	height: 150px
+.social-link
+	&:hover
+		.social-ico
+			color: $base-active-color		
+.social-ico
+	width: 100%
+	height: 50px
+	text-align: center
+	line-height: 50px
+	font-size: 30px
+	color: $base-color
+
+.main-screen
+	width: 100%
+	height: 100%
+.text-zone
+	width: 50%
+	height: 50%
+	position: absolute
+	left: 10%
+	top: 25%
+	z-index: 2
+	color: #fff
+	font-weight: 600
+	+display-flex
+	flex-direction: column
+	justify-content: center
+.title-text
+	font-size: 0
+	cursor: default
+.letter
+	font-size: 50px
+	&:hover
+		color: $base-active-color
+		cursor: default
+		+transition($default-transition)
+
+
+.svg-title
+	position: absolute
+	top: 20%
+	right: 5%
+	transform:  rotate(20deg)
+	width: 40%
+	+display-flex
+	flex-direction: column
+	justify-content: center	
+
+path
+	stroke: #fff
+	fill: #fff
+	stroke-dasharray: 1800
+	opacity: 1
+	animation: titlesvg 5s ease-in
+
+@keyframes titlesvg
+	0%
+		opacity: 0
+		fill: none
+		stroke-dasharray: 200
+	30%
+		opacity: .4	
+		fill: none
+		stroke-dasharray: 300
+	60%
+		stroke-dasharray: 500
+	80%
+		fill: rgba(255,255,255,0)
+	100%
+		opacity: 1
+		fill: rgba(255,255,255,1)
+		stroke-dasharray: 800			
+
+	
+.skills-page
+	height: 100vh
+	position: relative
+.skill-tags
+	height: 100%
+	+display-flex
+	justify-content: center
+	align-items: center
+.skill-text
+	height: 100%
+	+display-flex
+	justify-content: center
+	align-items: center
+	h3
+		font-size: 3rem
+		letter-spacing: 0.3rem
+		color: $base-active-color
+.contacts
+	padding-left: 50px
+.contact-title
+	color: #fff
+	font-size: 0
+.contact-form, .contact-map
+	height: 100vh
+.contact-form
+	+display-flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+.contact-description
+	color: $base-active-color	
+.contact-map
+
+#name, #email, #subject, #message
+	background-color: $base-color
+	border: 2px solid transparent
+	border-radius: 5px
+	padding: 10px 10px
+	margin-top: 10px
+	color: #fff
+	&:focus
+		outline: none
+		border: 2px solid $base-active-color
+		transition: all .7s linear
+	&::placeholder 
+		color: $base-active-color	
+
+#name, #email
+	width: 49.5%
+#subject, #message
+	width: 100%
+#submit
+	padding: 10px
+	margin-top: 10px
+	border-radius: 5px
+	border: 3px solid transparent
+	width: 30%
+	background-color: $base-active-color
+	color: $base-color
+	font-weight: 600
+	&:hover
+		cursor: pointer
+

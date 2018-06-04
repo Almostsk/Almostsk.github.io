@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dmytro Prushchak - Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="app/img/mylogo.png" type="image/png">
+    <!-- build:css build/app/css/vendor.min.css -->
+    <link rel="stylesheet" href="app/bower_components/bootstrap-grid-only/css/grid12.css" />
+    <link rel="stylesheet" href="app/bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="app/bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="app/bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="app/bower_components/fancybox/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="app/css/night.css">
+    <link rel="stylesheet" href="app/css/hover.css">
+    <!-- endbuild -->
+    <!-- build:css build/app/css/main.min.css -->
+    <link rel="stylesheet" href="app/css/stylesheet.css">
+    <!-- endbuild -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <style>
+    .loaded .header,
+    .loaded .content,
+    .loaded .footer {
+        visibility: hidden;
+    }
+
+    .icon-load {
+        background: url(app/img/808.svg) no-repeat left top;
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        margin-left: -20px;
+        z-index: 9999;
+        display: none;
+    }
+
+    .loaded .icon-load {
+        display: block;
+    }
+    </style>
+</head>
+
+<body class="loaded">
+    <section class="content">
+        <div class="nav-menu">
+            <a href="index.html">
+                <div class="nav-logo">
+                    <img src="app/img/mylogo.png" alt="DPortfolio" class="logo">
+                </div>
+            </a>
+            <div class="nav-buttons">
+                <a class="nav-link" href="index.html">
+                    <div class="nav-button">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span class="nav-hidden">Home</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="about.html">
+                    <div class="nav-button">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                        <span class="nav-hidden">About</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="skills.html">
+                    <div class="nav-button">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                        <span class="nav-hidden">Skills</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="works.html">
+                    <div class="nav-button">
+                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <span class="nav-hidden">Works</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="contact.html">
+                    <div class="nav-button">
+                        <i class="fa fa-envelope-o" aria-hidden="true" style="color: #08fdd8"></i>
+                        <span class="nav-hidden">Contact</span>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-social">
+                <a class="social-link" href="https://github.com/Almostsk">
+                    <div class="social-ico">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <a class="social-link" href="https://www.facebook.com/dima.pruschak">
+                    <div class="social-ico">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/dmitry-pruschak-725872138/">
+                    <div class="social-ico">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="main-screen">
+            <canvas id="pixie"></canvas>
+            <div class="col-xs-6 contacts">
+                <div class="contact-form">
+                    <h2 class="contact-title">
+            			<span class="letter hvr-wobble-horizontal" aria-hidden="true">C</span>
+            			<span class="letter hvr-wobble-horizontal" aria-hidden="true">o</span>
+            			<span class="letter hvr-wobble-horizontal" aria-hidden="true">n</span>
+            			<span class="letter hvr-wobble-horizontal" aria-hidden="true">t</span>
+            			<span class="letter hvr-wobble-horizontal" aria-hidden="true">a</span>
+            			<span class="letter hvr-wobble-horizontal" aria-hidden="true">c</span>
+            			<span class="letter hvr-wobble-horizontal" aria-hidden="true">t</span>
+            			<span class="letter hvr-wobble-horizontal" aria-hidden="true" style="opacity: 0">_</span>
+            			<span class="letter hvr-wobble-horizontal" aria-hidden="true">w</span>
+            			<span class="letter hvr-wobble-horizontal" aria-hidden="true">i</span>
+            			<span class="letter hvr-wobble-horizontal" aria-hidden="true">t</span>
+            			<span class="letter hvr-wobble-horizontal" aria-hidden="true">h</span>
+            			<span class="letter hvr-wobble-horizontal" aria-hidden="true" style="opacity: 0">_</span>
+            			<span class="letter hvr-wobble-horizontal" aria-hidden="true">m</span>
+            			<span class="letter hvr-wobble-horizontal" aria-hidden="true">e</span>
+            		</h2>
+            		<p class="contact-description">If you have any questions, please contact with me:</p>
+            		<form action="get">
+            			<input id="name" type="text" placeholder="Name">
+            			<input id="email" type="email" placeholder="Email"> <br>
+            			<input id="subject" type="text" placeholder="Subject"> <br>
+            			<textarea id="message" name="message" id="" cols="50" rows="10" placeholder="Message"></textarea>
+            			<input id="submit" type="submit" class="hvr-grow">
+            		</form>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div id="map" class="contact-map">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="application/ld+json">
+    {
+        "@context": "[[++site_url]]",
+        "@type": "WebSite",
+        "url": "[[++site_url]]",
+        "name": "Site type - [[++site_name]]",
+        "alternateName": "[[++site_name]]",
+        "contactPoint": [{
+            "@type": "ContactPoint",
+            "telephone": "yourphone",
+            "contactType": "customer service"
+        }],
+        "potentialAction": [{
+            "@type": "SearchAction",
+            "target": "[[++site_url]]search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }],
+        "sameAs": [
+            "https://www.facebook.com/yourprofile",
+            "https://www.instagram.com/yourprofile",
+            "http://www.linkedin.com/in/yourprofile",
+            "https://plus.google.com/yourprofile"
+        ]
+    }
+    </script>
+    <script type="text/javascript">
+    // Определяем переменную map
+    var map;
+
+    // Функция initMap которая отрисует карту на странице
+    function initMap() {
+
+        // В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
+        map = new google.maps.Map(document.getElementById('map'), {
+            // При создании объекта карты необходимо указать его свойства
+            // center - определяем точку на которой карта будет центрироваться
+            center: { lat: 50.463294, lng: 30.356945 },
+            // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
+            zoom: 8,
+            styles: [
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#1d2c4d"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#8ec3b9"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1a3646"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.country",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#4b6878"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#64779e"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.province",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#4b6878"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.man_made",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#334e87"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.natural",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#023e58"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#283d6a"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#6f9ba5"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1d2c4d"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#023e58"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#3C7680"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#304a7d"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#98a5be"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1d2c4d"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#2c6675"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#255763"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#b0d5ce"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#023e58"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#98a5be"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1d2c4d"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#283d6a"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#3a4762"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#0e1626"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#4e6d70"
+      }
+    ]
+  }
+]
+        });
+        var marker = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: { lat: 50.463294, lng: 30.356945 },
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+            // Пишем название маркера - появится если навести на него курсор и немного подождать
+            title: 'I am here'
+        });
+    }
+    </script>
+    <!-- 3. Подключаем библиотеку Google Maps Api, чтобы создать карту -->
+    <!-- Атрибуты async и defer - позволяют загружать этот скрипт асинхронно, вместе с загрузкой всей страницы  -->
+    <!-- В подключении библиотеки Google Maps Api в конце указан параметр callback, после  подключения и загрузки этого Api сработает функция initMap для отрисовки карты,  которую мы описали выше -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+    <div class="icon-load"></div>
+    <!-- build:js build/app/js/vendor.min.js -->
+    <script type="text/javascript" src="app/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="app/bower_components/jquery-migrate/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="app/bower_components/wow/dist/wow.min.js"></script>
+    <script type="text/javascript" src="app/bower_components/slick-carousel/slick/slick.js"></script>
+    <script type="text/javascript" src="app/bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="app/js/parallaxsoon.js"></script>
+    <!-- endbuild -->
+    <!-- build:js build/app/js/main.min.js -->
+    <script type="text/javascript" src="app/js/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

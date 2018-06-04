@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dmytro Prushchak - Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="app/img/mylogo.png" type="image/png">
+    <!-- build:css build/app/css/vendor.min.css -->
+    <link rel="stylesheet" href="app/bower_components/bootstrap-grid-only/css/grid12.css" />
+    <link rel="stylesheet" href="app/bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="app/bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="app/bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="app/bower_components/fancybox/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="app/css/night.css">
+    <link rel="stylesheet" href="app/css/hover.css">
+    <!-- endbuild -->
+    <!-- build:css build/app/css/main.min.css -->
+    <link rel="stylesheet" href="app/css/stylesheet.css">
+    <!-- endbuild -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <style>
+    .loaded .header,
+    .loaded .content,
+    .loaded .footer {
+        visibility: hidden;
+    }
+
+    .icon-load {
+        background: url(app/img/808.svg) no-repeat left top;
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        margin-left: -20px;
+        z-index: 9999;
+        display: none;
+    }
+
+    .loaded .icon-load {
+        display: block;
+    }
+    </style>
+</head>
+
+<body class="loaded">
+    <section class="content">
+        <div class="nav-menu">
+            <a href="index.html">
+                <div class="nav-logo">
+                    <img src="app/img/mylogo.png" alt="DPortfolio" class="logo">
+                </div>
+            </a>
+            <div class="nav-buttons">
+                <a class="nav-link" href="index.html">
+                    <div class="nav-button">
+                        <i class="fa fa-home" aria-hidden="true" ></i>
+                        <span class="nav-hidden">Home</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="about.html">
+                    <div class="nav-button">
+                        <i class="fa fa-user-o" aria-hidden="true" style="color: #08fdd8"></i>
+                        <span class="nav-hidden">About</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="skills.html">
+                    <div class="nav-button">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                        <span class="nav-hidden">Skills</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="works.html">
+                    <div class="nav-button">
+                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <span class="nav-hidden">Works</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="contact.html">
+                    <div class="nav-button">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <span class="nav-hidden">Contact</span>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-social">
+                <a class="social-link" href="https://github.com/Almostsk">
+                    <div class="social-ico">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <a class="social-link" href="https://www.facebook.com/dima.pruschak">
+                    <div class="social-ico">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/dmitry-pruschak-725872138/">
+                    <div class="social-ico">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="main-screen">
+            <canvas id="pixie"></canvas>
+        </div>    
+    </section>
+    <script type="application/ld+json">
+    {
+        "@context": "[[++site_url]]",
+        "@type": "WebSite",
+        "url": "[[++site_url]]",
+        "name": "Site type - [[++site_name]]",
+        "alternateName": "[[++site_name]]",
+        "contactPoint": [{
+            "@type": "ContactPoint",
+            "telephone": "yourphone",
+            "contactType": "customer service"
+        }],
+        "potentialAction": [{
+            "@type": "SearchAction",
+            "target": "[[++site_url]]search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }],
+        "sameAs": [
+            "https://www.facebook.com/yourprofile",
+            "https://www.instagram.com/yourprofile",
+            "http://www.linkedin.com/in/yourprofile",
+            "https://plus.google.com/yourprofile"
+        ]
+    }
+    </script>
+    <div class="icon-load"></div>
+    <!-- build:js build/app/js/vendor.min.js -->
+    <script type="text/javascript" src="app/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="app/bower_components/jquery-migrate/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="app/bower_components/wow/dist/wow.min.js"></script>
+    <script type="text/javascript" src="app/bower_components/slick-carousel/slick/slick.js"></script>
+    <script type="text/javascript" src="app/bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="app/js/parallaxsoon.js"></script>
+    <!-- endbuild -->
+    <!-- build:js build/app/js/main.min.js -->
+    <script type="text/javascript" src="app/js/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
