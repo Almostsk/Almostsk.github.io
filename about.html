@@ -26,27 +26,27 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
     <style>
-    .loaded .header,
-    .loaded .content,
-    .loaded .footer {
-        visibility: hidden;
-    }
+        .loaded .header,
+        .loaded .content,
+        .loaded .footer {
+            visibility: hidden;
+        }
 
-    .icon-load {
-        background: url(app/img/808.svg) no-repeat left top;
-        width: 40px;
-        height: 40px;
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        margin-left: -20px;
-        z-index: 9999;
-        display: none;
-    }
+        .icon-load {
+            background: url(app/img/808.svg) no-repeat left top;
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin-left: -20px;
+            z-index: 9999;
+            display: none;
+        }
 
-    .loaded .icon-load {
-        display: block;
-    }
+        .loaded .icon-load {
+            display: block;
+        }
     </style>
 </head>
 
@@ -61,7 +61,7 @@
             <div class="nav-buttons">
                 <a class="nav-link" href="index.html">
                     <div class="nav-button">
-                        <i class="fa fa-home" aria-hidden="true" ></i>
+                        <i class="fa fa-home" aria-hidden="true"></i>
                         <span class="nav-hidden">Home</span>
                     </div>
                 </a>
@@ -113,44 +113,81 @@
             <div class="about-text col-md-6">
                 <div class="skill-text-container">
                     <div class="skill-text">
-                    <h3><span class="hvr-buzz-out">Something</span> <span class="hvr-buzz-out">about</span> <span class="hvr-buzz-out">me</span></h3>
-                    <p class="about-description"> I'm just a beginner in web development. However, there is a strong desire to develop in this direction.
-                    </p>
-                    <p class="about-description">
-                        <span class="hvr-wobble-bottom">Actually,</span> <span class="hvr-wobble-bottom">technologies </span> <span class="hvr-wobble-bottom">such </span> <span class="hvr-wobble-bottom">as </span> <span class="hvr-wobble-bottom">HTML5, </span> <span class="hvr-wobble-bottom">CSS3 </span> <span class="hvr-wobble-bottom">have </span> <span class="hvr-wobble-bottom">been </span> <span class="hvr-wobble-bottom">studied </span> <span class="hvr-wobble-bottom">by </span> <span class="hvr-wobble-bottom">myself. </span> <span class="hvr-wobble-bottom">I gradually </span> <span class="hvr-wobble-bottom">learn </span> <span class="hvr-wobble-bottom">the </span> <span class="hvr-wobble-bottom">Java script, </span> <span class="hvr-wobble-bottom">but I </span> <span class="hvr-wobble-bottom">plan to </span> <span class="hvr-wobble-bottom">deepen it </span> <span class="hvr-wobble-bottom">further.</span>
-                    </p>
+                        <h3>
+                            <span class="hvr-buzz-out">Something</span>
+                            <span class="hvr-buzz-out">about</span>
+                            <span class="hvr-buzz-out">me</span>
+                        </h3>
+                        <p class="about-description">
+                            <span class="hvr-wobble-bottom">I'm</span>
+                            <span class="hvr-wobble-bottom">just</span>
+                            <span class="hvr-wobble-bottom">a</span>
+                            <span class="hvr-wobble-bottom">beginner</span>
+                            <span class="hvr-wobble-bottom"></span>in</span>
+                            <span class="hvr-wobble-bottom">web</span>
+                            <span class="hvr-wobble-bottom">development.</span>
+                            <span class="hvr-wobble-bottom">However,</span>
+                            <span class="hvr-wobble-bottom">there</span>
+                            <span class="hvr-wobble-bottom">is a</span>
+                            <span class="hvr-wobble-bottom">strong</span>
+                            <span class="hvr-wobble-bottom">desire to</span>
+                            <span class="hvr-wobble-bottom">develop in</span>
+                            <span class="hvr-wobble-bottom"> this</span>
+                            <span class="hvr-wobble-bottom">direction.</span>
+                        </p>
+                        <p class="about-description">
+                            <span class="hvr-wobble-bottom">Actually,</span>
+                            <span class="hvr-wobble-bottom">technologies </span>
+                            <span class="hvr-wobble-bottom">such </span>
+                            <span class="hvr-wobble-bottom">as </span>
+                            <span class="hvr-wobble-bottom">HTML5, </span>
+                            <span class="hvr-wobble-bottom">CSS3 </span>
+                            <span class="hvr-wobble-bottom">have </span>
+                            <span class="hvr-wobble-bottom">been </span>
+                            <span class="hvr-wobble-bottom">studied </span>
+                            <span class="hvr-wobble-bottom">by </span>
+                            <span class="hvr-wobble-bottom">myself. </span>
+                            <span class="hvr-wobble-bottom">I gradually </span>
+                            <span class="hvr-wobble-bottom">learn </span>
+                            <span class="hvr-wobble-bottom">the </span>
+                            <span class="hvr-wobble-bottom">Java script, </span>
+                            <span class="hvr-wobble-bottom">but I </span>
+                            <span class="hvr-wobble-bottom">plan to </span>
+                            <span class="hvr-wobble-bottom">deepen it </span>
+                            <span class="hvr-wobble-bottom">further.</span>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="about-photo col-md-6">
 
             </div>
-        </div>    
+        </div>
     </section>
     <script type="application/ld+json">
-    {
-        "@context": "[[++site_url]]",
-        "@type": "WebSite",
-        "url": "[[++site_url]]",
-        "name": "Site type - [[++site_name]]",
-        "alternateName": "[[++site_name]]",
-        "contactPoint": [{
-            "@type": "ContactPoint",
-            "telephone": "yourphone",
-            "contactType": "customer service"
-        }],
-        "potentialAction": [{
-            "@type": "SearchAction",
-            "target": "[[++site_url]]search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }],
-        "sameAs": [
-            "https://www.facebook.com/yourprofile",
-            "https://www.instagram.com/yourprofile",
-            "http://www.linkedin.com/in/yourprofile",
-            "https://plus.google.com/yourprofile"
-        ]
-    }
+        {
+            "@context": "[[++site_url]]",
+            "@type": "WebSite",
+            "url": "[[++site_url]]",
+            "name": "Site type - [[++site_name]]",
+            "alternateName": "[[++site_name]]",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "yourphone",
+                "contactType": "customer service"
+            }],
+            "potentialAction": [{
+                "@type": "SearchAction",
+                "target": "[[++site_url]]search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }],
+            "sameAs": [
+                "https://www.facebook.com/yourprofile",
+                "https://www.instagram.com/yourprofile",
+                "http://www.linkedin.com/in/yourprofile",
+                "https://plus.google.com/yourprofile"
+            ]
+        }
     </script>
     <div class="icon-load"></div>
     <!-- build:js build/app/js/vendor.min.js -->
