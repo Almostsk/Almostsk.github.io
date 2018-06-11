@@ -9,7 +9,7 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" href="app/img/mylogo.png" type="image/png">
     <!-- build:css build/app/css/vendor.min.css -->
-    <link rel="stylesheet" href="app/bower_components/bootstrap-grid-only/css/grid12.css" />
+    <link rel="stylesheet" href="app/css/bootstrap.min.css">
     <link rel="stylesheet" href="app/bower_components/normalize-css/normalize.css" />
     <link rel="stylesheet" href="app/bower_components/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="app/bower_components/slick-carousel/slick/slick.css" />
@@ -110,6 +110,8 @@
         </div>
         <div class="main-screen">
             <canvas id="pixie"> </canvas>
+            <div class="container-fluid">
+                <div class="row">
             <div class="about-text col-md-6">
                 <div class="skill-text-container">
                     <div class="skill-text">
@@ -158,11 +160,14 @@
                         </p>
                     </div>
                 </div>
+                
             </div>
-            <div class="about-photo col-md-6">
-
+            <div class="about-photo col-md-5">
+                    <img src="/app/img/photo1.png" alt="myphoto" class="photo1">
             </div>
         </div>
+    </div>
+</div>
     </section>
     <script type="application/ld+json">
         {
@@ -197,6 +202,7 @@
     <script type="text/javascript" src="app/bower_components/slick-carousel/slick/slick.js"></script>
     <script type="text/javascript" src="app/bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="app/js/parallaxsoon.js"></script>
+    <script src="app/js/bootstrap.min.js"></script>
     <!-- endbuild -->
     <!-- build:js build/app/js/main.min.js -->
     <script type="text/javascript" src="app/js/main.js"></script>

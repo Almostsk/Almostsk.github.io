@@ -1,7 +1,5 @@
 
 
-
-
 .hvr-buzz-out, .hvr-wobble-bottom
 	cursor: default	
 p
@@ -38,6 +36,7 @@ text
 	height: 250px
 	position: relative
 .nav-link
+	padding: 0
 	&:hover
 		+transition($default-transition)
 		.nav-button
@@ -162,6 +161,17 @@ path
 		color: $base-active-color
 		cursor: default
 		+transition($default-transition)
+.about-photo
+	+display-flex
+	justify-content: center
+	align-items: center
+	height: 100vh	
+	overflow: hidden	
+.photo1
+	position: absolute
+	top: 25%
+	height: 100%
+
 
 //Skills page
 
@@ -178,6 +188,7 @@ path
 	+display-flex
 	justify-content: center
 	align-items: center
+	margin-bottom: 0
 	h3
 		font-size: 3rem
 		letter-spacing: 0.3rem
