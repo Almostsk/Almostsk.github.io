@@ -37,3 +37,19 @@ $('.single-item').slick();
 // **
 
 });
+
+
+//Media landscape
+
+// var mql = window.matchMedia('all and (orientation:landscape) and (max-width : 768px)');
+// if (mql.matches) {
+//     var pixie = document.getElementById("pixie");
+//     var landScapeSection = document.getElementById("landscape");
+
+//     pixie.remove();
+
+//     landScapeSection.insertBefore(pixie, landScapeSection.firstChild);
+//     console.log(pixie,landScapeSection);
+// } else {
+//     console.log('Correct'); 
+// }

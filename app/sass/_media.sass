@@ -11,14 +11,98 @@
 
 
 /* Small Devices, Tablets */
+@media only screen and (orientation:landscape) and (max-width : 768px)
+	.landscape-mob
+		display: block
+		.container
+			height: 100%
+			+display-flex
+			flex-direction: column
+			justify-content: center
+			.rotate-img
+				z-index: 9000
+				text-align: center
+				img
+					width: 30%
+			.rotate-block
+				z-index: 9000
+				font-size: 2rem
+				font-family: $baseFont
+				text-align: center		
+	.content
+		display: none	
+
+
 @media only screen and (max-width : 768px)
+	.nav-menu
+		width: 100%
+		height: 50px
+		min-height: 50px
+		position: absolute
+		z-index: 3
+		top: 0
+		left: 0
+		background-color: rgba(0,0,0,0.3)	
+		+display-flex
+		flex-direction: row
+		justify-content: space-around
+	.nav-logo
+		padding-top: 0
+		width: 50px
+		height: 100%
+		background-color: rgba(0,0,0,0.3)
+	.logo
+		width: 90%	
+
+	.nav-buttons
+		width: 75%
+		padding: 0 10px
+		height: 50px
+		position: relative
+		+display-flex
+		justify-content: space-between
+	.nav-button
+		color: #35b3ff	
+	.nav-link
+		display: inline-block	
+
+	.nav-social
+		display: none	
+
+	//Main page
+	.letter
+		font-size: 2rem
+		-webkit-text-stroke: 1px $base-color
+	.text-zone
+		width: 100%
+		left: 0	
+		.title-text
+			+display-flex
+			justify-content: center
+	.svg-title
+		width: 100%
+		top: 35%
+		left: 5%
+
+	//Skills
 	.skills-tags
 		position: absolute
 	.skill-text
 		h3
 			color: $base-color
-			text-align: center	
+			text-align: center
 
+	//works
+
+	.photostack
+		margin: 0 	
+
+	//Contacts			
+	.contact-map
+		display: none
+
+	.contacts
+		padding-left: 15px	
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
