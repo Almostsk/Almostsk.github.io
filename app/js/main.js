@@ -53,3 +53,7 @@ $('.single-item').slick();
 // } else {
 //     console.log('Correct'); 
 // }
+
+$(window).resize(function(){
+  window.setTimeout('location.reload()', 0);
+  });
