@@ -29,42 +29,42 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-    .loaded .header,
-    .loaded .content,
-    .loaded .footer {
-        visibility: hidden;
-    }
+        .loaded .header,
+        .loaded .content,
+        .loaded .footer {
+            visibility: hidden;
+        }
 
-    .icon-load {
-        background: url(app/img/808.svg) no-repeat left top;
-        width: 40px;
-        height: 40px;
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        margin-left: -20px;
-        z-index: 9999;
-        display: none;
-    }
+        .icon-load {
+            background: url(app/img/808.svg) no-repeat left top;
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin-left: -20px;
+            z-index: 9999;
+            display: none;
+        }
 
-    .loaded .icon-load {
-        display: block;
-    }
+        .loaded .icon-load {
+            display: block;
+        }
     </style>
 </head>
 
 <body class="loaded">
-        <canvas id="pixie"></canvas>
-        <section class="landscape-mob" id="landscape">
-            <div class="container">
-                <div class="rotate-img">
-                    <img src="app/img/rotate_screen_icon.gif" alt="Rotate device">
-                </div>
-                <div class="rotate-block">
-                    Please rotate your device
-                </div>
+    <canvas id="pixie"></canvas>
+    <section class="landscape-mob" id="landscape">
+        <div class="container">
+            <div class="rotate-img">
+                <img src="app/img/rotate_screen_icon.gif" alt="Rotate device">
             </div>
-        </section>
+            <div class="rotate-block">
+                Please rotate your device
+            </div>
+        </div>
+    </section>
     <section class="content">
         <div class="nav-menu">
             <a href="index.html">
@@ -123,45 +123,57 @@
             </div>
         </div>
         <div class="main-screen">
-                <section id="photostack-1" class="photostack photostack-start">
-                    <div>
-                        <figure>
-                            <a href="https://diem.com.ua/" class="photostack-img" target="_blank"><img src="app/img/1.jpg" alt="img01"/></a>
-                            <figcaption>
-                                <h2 class="photostack-title">Diem Studio Site</h2>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <a href="http://asuukr.com.ua/" class="photostack-img" target="_blank"><img src="app/img/2.jpg" alt="img02"/></a>
-                            <figcaption>
-                                <h2 class="photostack-title">АСУ-Украина</h2>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <a href="https://tradeingroup.com.ua/" class="photostack-img" target="_blank"><img src="app/img/3.jpg" alt="img03"/></a>
-                            <figcaption>
-                                <h2 class="photostack-title">Trade Inter Group</h2>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <a href="http://brs-teo.com.ua/" class="photostack-img" target="_blank"><img src="app/img/4.jpg" alt="img04"/></a>
-                            <figcaption>
-                                <h2 class="photostack-title">BRS-Teo</h2>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <a href="http://goo.gl/NJ1Dhf" class="photostack-img" target="_blank"><img src="app/img/5.jpg" alt="img05"/></a>
-                            <figcaption>
-                                <h2 class="photostack-title">Portfolio 5</h2>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <a href="http://goo.gl/Ms7VDl" class="photostack-img" target="_blank"><img src="app/img/6.jpg" alt="img06"/></a>
-                            <figcaption>
-                                <h2 class="photostack-title">Portfolio 6</h2>
-                            </figcaption>
-                        </figure>
-                        <!-- <figure data-dummy>
+            <section id="photostack-1" class="photostack photostack-start">
+                <div>
+                    <figure>
+                        <a href="https://diem.com.ua/" class="photostack-img" target="_blank">
+                            <img src="app/img/1.jpg" alt="img01" />
+                        </a>
+                        <figcaption>
+                            <h2 class="photostack-title">Diem Studio Site</h2>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="http://asuukr.com.ua/" class="photostack-img" target="_blank">
+                            <img src="app/img/2.jpg" alt="img02" />
+                        </a>
+                        <figcaption>
+                            <h2 class="photostack-title">АСУ-Украина</h2>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="https://tradeingroup.com.ua/" class="photostack-img" target="_blank">
+                            <img src="app/img/3.jpg" alt="img03" />
+                        </a>
+                        <figcaption>
+                            <h2 class="photostack-title">Trade Inter Group</h2>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="http://brs-teo.com.ua/" class="photostack-img" target="_blank">
+                            <img src="app/img/4.jpg" alt="img04" />
+                        </a>
+                        <figcaption>
+                            <h2 class="photostack-title">BRS-Teo</h2>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="http://goo.gl/NJ1Dhf" class="photostack-img" target="_blank">
+                            <img src="app/img/5.jpg" alt="img05" />
+                        </a>
+                        <figcaption>
+                            <h2 class="photostack-title">Portfolio 5</h2>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="http://goo.gl/Ms7VDl" class="photostack-img" target="_blank">
+                            <img src="app/img/6.jpg" alt="img06" />
+                        </a>
+                        <figcaption>
+                            <h2 class="photostack-title">Portfolio 6</h2>
+                        </figcaption>
+                    </figure>
+                    <!-- <figure data-dummy>
                             <a href="#" class="photostack-img"><img src="app/img/7.jpg" alt="img07"/></a>
                             <figcaption>
                                 <h2 class="photostack-title">Lovely Green</h2>
@@ -221,46 +233,45 @@
                                 <h2 class="photostack-title">Lightness</h2>
                             </figcaption>
                         </figure> -->
-                    </div>
-                </section>
+                </div>
+            </section>
         </div>
     </section>
     <script src="app/js/classie.js"></script>
-        <script src="app/js/photostack.js"></script>
-        <script>
-            // [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
-            
-            new Photostack( document.getElementById( 'photostack-1' ), {
-                callback : function( item ) {
-                    //console.log(item)
-                }
-            } );
-            
-        </script>
+    <script src="app/js/photostack.js"></script>
+    <script>
+        // [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
+
+        new Photostack(document.getElementById('photostack-1'), {
+            callback: function (item) {
+                //console.log(item)
+            }
+        });
+    </script>
     <script type="application/ld+json">
-    {
-        "@context": "[[++site_url]]",
-        "@type": "WebSite",
-        "url": "[[++site_url]]",
-        "name": "Site type - [[++site_name]]",
-        "alternateName": "[[++site_name]]",
-        "contactPoint": [{
-            "@type": "ContactPoint",
-            "telephone": "yourphone",
-            "contactType": "customer service"
-        }],
-        "potentialAction": [{
-            "@type": "SearchAction",
-            "target": "[[++site_url]]search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }],
-        "sameAs": [
-            "https://www.facebook.com/yourprofile",
-            "https://www.instagram.com/yourprofile",
-            "http://www.linkedin.com/in/yourprofile",
-            "https://plus.google.com/yourprofile"
-        ]
-    }
+        {
+            "@context": "[[++site_url]]",
+            "@type": "WebSite",
+            "url": "[[++site_url]]",
+            "name": "Site type - [[++site_name]]",
+            "alternateName": "[[++site_name]]",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "yourphone",
+                "contactType": "customer service"
+            }],
+            "potentialAction": [{
+                "@type": "SearchAction",
+                "target": "[[++site_url]]search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }],
+            "sameAs": [
+                "https://www.facebook.com/yourprofile",
+                "https://www.instagram.com/yourprofile",
+                "http://www.linkedin.com/in/yourprofile",
+                "https://plus.google.com/yourprofile"
+            ]
+        }
     </script>
     <div class="icon-load"></div>
     <!-- build:js build/app/js/vendor.min.js -->
