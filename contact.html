@@ -158,7 +158,7 @@
                   <input id="subject" type="text" placeholder="Subject">
                 </div>
                 <div class="col-md-12">
-                  <textarea id="message" name="message" id="" cols="50" rows="10" placeholder="Message"></textarea>
+                  <textarea id="message" name="message" cols="50" rows="10" placeholder="Message"></textarea>
                 </div>
                 <div class="col-md-3">
                   <input id="submit" type="submit" class="hvr-grow">
@@ -200,19 +200,12 @@
         ]
     }
     </script>
-    <script type="text/javascript">
-    // Определяем переменную map
+    <script>
+    
     var map;
-
-    // Функция initMap которая отрисует карту на странице
     function initMap() {
-
-        // В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
         map = new google.maps.Map(document.getElementById('map'), {
-            // При создании объекта карты необходимо указать его свойства
-            // center - определяем точку на которой карта будет центрироваться
             center: { lat: 50.463294, lng: 30.356945 },
-            // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
             zoom: 8,
             styles: [
     {
@@ -413,17 +406,17 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRNEmGuZvAvJavgL_3D0U_iV31p7-mUx4&callback=initMap"></script>
     <div class="icon-load"></div>
     <!-- build:js build/app/js/vendor.min.js -->
-    <script type="text/javascript" src="app/bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="app/bower_components/jquery-migrate/jquery-migrate.min.js"></script>
-    <script type="text/javascript" src="app/bower_components/wow/dist/wow.min.js"></script>
-    <script type="text/javascript" src="app/bower_components/slick-carousel/slick/slick.js"></script>
-    <script type="text/javascript" src="app/bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script type="text/javascript" src="app/js/parallaxsoon.js"></script>
+    <script  src="app/bower_components/jquery/dist/jquery.min.js"></script>
+    <script  src="app/bower_components/jquery-migrate/jquery-migrate.min.js"></script>
+    <script  src="app/bower_components/wow/dist/wow.min.js"></script>
+    <script  src="app/bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="app/bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="app/js/parallaxsoon.js"></script>
     <script src="app/js/bootstrap.min.js"></script>
     <script src="app/js/feedback.js"></script>
     <script src="app/js/jquery.arcticmodal.js"></script>
     <script src="app/js/jquery.jgrowl.js"></script>
-    <script type="text/javascript">
+    <script>
         $(document).ready(function() {
                 $(document).on('click', '.modal_btn', function(){
                         $('#small-modal').arcticmodal();
@@ -434,7 +427,7 @@
 
     <!-- endbuild -->
     <!-- build:js build/app/js/main.min.js -->
-    <script type="text/javascript" src="app/js/main.js"></script>
+    <script src="app/js/main.js"></script>
     <!-- endbuild -->
 </body>
 
