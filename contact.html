@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="app/bower_components/fancybox/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="app/css/night.css">
     <link rel="stylesheet" href="app/css/hover.css">
+    <link rel="stylesheet" href="app/css/jquery.arcticmodal.css">
+    <link rel="stylesheet" href="app/css/jquery.jgrowl.css">
+
+
     <!-- endbuild -->
     <!-- build:css build/app/css/main.min.css -->
     <link rel="stylesheet" href="app/css/stylesheet.css">
@@ -416,6 +420,18 @@
     <script type="text/javascript" src="app/bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="app/js/parallaxsoon.js"></script>
     <script src="app/js/bootstrap.min.js"></script>
+    <script src="app/js/feedback.js"></script>
+    <script src="app/js/jquery.arcticmodal.js"></script>
+    <script src="app/js/jquery.jgrowl.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+                $(document).on('click', '.modal_btn', function(){
+                        $('#small-modal').arcticmodal();
+                });
+        });
+</script>
+
+
     <!-- endbuild -->
     <!-- build:js build/app/js/main.min.js -->
     <script type="text/javascript" src="app/js/main.js"></script>
